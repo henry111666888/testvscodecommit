@@ -1,0 +1,8 @@
+db_name = {test01}
+db_pass = {postgres}
+db_user = {posgtres}
+db_type = {postgres}
+db_host = {local}
+db_port = {5432}
+token_password = jwtPassword
+database_url = {資料庫網址}
