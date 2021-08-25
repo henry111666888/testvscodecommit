@@ -143,14 +143,12 @@ func main() {
 	// 修改資料 update
 	// 改密碼和更新時間 finish
 	// DB.Model(&account{}).Where("pid = ? AND account = ? And passwd = ?", "40", "hhh", "567").Updates(account{Passwd: "456", Updated_at: time.Now()})
-	// 改用map來做更新 non
-	// DB.Model(&account{}).Where("pid = ? AND account = ? And passwd = ?", "40", "hhh", "456").Updates(map[string]string{"passwd": "567", "updated_at": time.Now().Format("2006-1-2 3:4:5")})
 
 	// 插入資料 insert into
 	// DB.Select("cname", "updated_at").Create(&account{Cname: "jjj", Updated_at: time.Now()})
 	//INSERT INTO "accounts" ("cname","updated_at") VALUES ('jjj','2021-08-25 14:48:14.752') RETURNING "id"
 
-	// 增刪
+	// 增刪 還不能用
 	// DB.Delete(&account{}).Where(account{Pid: "40"})
 
 }
